@@ -906,8 +906,8 @@ a:hover, a:focus, a:active { color: #de6288; }
 .io-zinnia .loader-section { background: #fff; }
 .io-zinnia .contact-info li .fa { color: #fff; background: linear-gradient(-45deg, #58b4ff 0%, #1996FB 100%); }
 .io-zinnia .form-message .input-field .input-line { color: #5a5d7a; border-bottom-color: #dee2e6; }
-.io-zinnia .form-message .input-field .input-line:focus { border-bottom-color: rgba(255, 108, 63, 0.6); }
-.io-zinnia .form-message .input-field .input-line.error { border-bottom-color: #58b4ff; }
+.io-zinnia .form-message .input-field .input-line:focus { border-bottom-color: rgba(25, 150, 251, 0.6); }
+.io-zinnia .form-message .input-field .input-line.error { border-bottom-color: #fe4350; }
 
 @media only screen and (max-width: 991px) { .io-zinnia .timeline-title:before { border-top-color: #fff; }
   .io-zinnia .timeline-row:before { border-left-color: #a7010c; }
