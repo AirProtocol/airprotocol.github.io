@@ -38,13 +38,13 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		if ($honeypot == '' && !(empty($emailTO))) {
 			### If you want use SMTP 
-			 //$mail->isSMTP();
-			 //$mail->SMTPDebug = 1;
-			 //$mail->Host = 'smtpout.secureserver.net';
-			 //$mail->Port = 587;
-			 //$mail->SMTPAuth = true;
-			 //$mail->Username = 'mailbot@airprotocol.org';
-			 //$mail->Password = '4nNj&mhr';
+			 $mail->isSMTP();
+			 $mail->SMTPDebug = 1;
+			 $mail->Host = 'smtpout.secureserver.net';
+			 $mail->Port = 587;
+			 $mail->SMTPAuth = true;
+			 $mail->Username = 'mailbot@airprotocol.org';
+			 $mail->Password = '4nNj&mhr';
 
 			### Regular email configure
 			$mail->IsHTML(true);
