@@ -1,27 +1,463 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx" class="js">
 <head>
-<meta charset="UTF-8">
-<title>AIR PROTOCOL</title>
-<style>
-html, body, #wrapper {
-   height:100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   border: 0;
-}
-#wrapper td {
-   vertical-align: middle;
-   text-align: center;
-}
-</style>
+	<meta charset="utf-8">
+	<meta name="author" content="Softnio">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="AirProtocol is a blockchain-based protocol for peer-to-peer exchange.">
+	<!-- Fav Icon  -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Site Title  -->
+	<title>AirProtocol — Decentralized Asset Exchange Network</title>
+	<!-- Vendor Bundle CSS -->
+	<link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=142">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="assets/css/style.css?ver=142">
+	<link rel="stylesheet" href="assets/css/theme-orange.css?ver=142">
+	
 </head>
-<body>
-<table id="wrapper">
-  <tr>
-    <td><img src="splash.jpg" alt="" /></td>
-  </tr>
-</table>
+
+<body class="theme-dark io-zinnia" data-spy="scroll" data-target="#mainnav" data-offset="80">
+
+	<!-- Header --> 
+	<header class="site-header is-sticky">
+	    
+	    <!-- Place Particle Js -->
+		<div id="particles-js" class="particles-container particles-js"></div>
+		
+		<!-- Navbar -->
+		<div class="navbar navbar-full navbar-expand-lg is-transparent" id="mainnav">
+            <a class="navbar-brand animated" data-animate="fadeInDown" data-delay=".65" href="./">
+                <img class="logo logo-dark" alt="logo" src="images/logo.png" srcset="images/logo2x.png 2x">
+                <img class="logo logo-light" alt="logo" src="images/logo-full-white.png" srcset="images/logo-full-white2x.png 2x">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+                <span class="navbar-toggler-icon">
+                    <span class="ti ti-align-justify"></span>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+                <ul class="navbar-nav animated remove-animation" data-animate="fadeInDown" data-delay=".75">                     
+                    <li class="nav-item"><a class="nav-link menu-link" href="#about">About<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="https://github.com/AirProtocol">Github</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#contact">Contact</a></li>
+                </ul>
+                <ul class="navbar-btns animated remove-animation" data-animate="fadeInDown" data-delay=".85">
+                    <li class="nav-item lang-switch" style="display:none;">
+                        <a class="" href="javascript:;" data-toggle="dropdown">English<em class="ti ti-angle-down"></em></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:;">Spanish</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link btn btn-sm btn-outline menu-link" href="#documents">WHITE PAPER</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-sm btn-outline menu-link" href="#contact">GET INVOLVED</a></li>
+                </ul>
+            </div>
+		</div>
+		<!-- End Navbar -->
+
+		<!-- Banner/Slider -->
+		<div id="header" class="banner banner-zinnia">
+            <div class="ui-shape ui-shape-light ui-shape-header"></div>
+			<div class="container">
+				<div class="banner-content">
+					<div class="row align-items-center text-center justify-content-center">
+						<div class="col-sm-10 col-md-12 col-lg-10">
+							<div class="header-txt tab-center mobile-center">
+								<h1 class="animated" data-animate="fadeInUp" data-delay="1.25">Introducing the AirProtocol Network</h1>
+								<div class="gaps size-1x d-none d-md-block"></div>
+								<p class="lead animated" data-animate="fadeInUp" data-delay="1.35">Unstoppable peer-to-peer <br class="d-none d-sm-block"> Fiat <em class="fas fa-arrows-alt-h"></em> Crypto exchange</p>
+								<img src="images/fiat-crypto.png" class="exchange-icon lead animated" data-animate="fadeInUp" data-delay="1.35" />
+								<div class="gaps size-1x d-none d-md-block"></div>
+								<ul class="btns animated" data-animate="fadeInUp" data-delay="1.45">
+									<li><a href="#documents" class="nav-link menu-link btn btn-icon-s3">WHITE PAPER <i class="fas fa-angle-double-right"></i></a></li>
+									<li><a href="#contact" class="nav-link menu-link btn btn-icon-s3">GET INVOLVED <i class="fas fa-angle-double-right"></i></a></li>
+								</ul>
+							</div>
+						</div><!-- .col  -->
+					</div><!-- .row  -->
+				</div><!-- .banner-content  -->
+			</div><!-- .container  -->
+			<ul class="hr-social hr-social-mid animated" data-animate="fadeIn" data-delay="1.55">
+			    <li><a href="https://www.facebook.com/AirProtocol" target="_blank"><em class="fab fa-facebook-f"></em></a></li>
+			    <li><a href="https://twitter.com/AirProtocol" target="_blank"><em class="fab fa-twitter"></em></a></li>
+			    <li><a href="https://github.com/AirProtocol" target="_blank"><em class="fab fa-github"></em></a></li>
+			    <li><a href="https://medium.com/@AirProtocol" target="_blank"><em class="fab fa-medium-m"></em></a></li>
+			    <li><a href="http://airprotocol.wikidot.com/" target="_blank"><em class="fab fa-wikipedia-w"></em></a></li>
+			</ul>
+		</div>
+		<!-- End Banner/Slider -->
+	</header>
+	
+    <div class="gaps size-3x"></div>
+	<!-- End Header -->
+	
+
+    <!-- Start Section -->
+    <div class="section section-pad about-section no-pb section-bg" id="about">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+				<div class="col-md-10">
+					<div class="section-head-s7">
+						<h2 class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1">About AirProtocol</h2>
+						<p class="animated" data-animate="fadeInUp" data-delay=".2">The Air Protocol is a decentralized, open source protocol that enables censorship-resistant and trust-minimized fiat to crypto exchange, and vice versa.</p>
+						<img src="images/video.png" class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1" />
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    <!-- End Section -->
+    
+    
+    <!-- Start Section -->
+    <div class="section section-pad prblmsltn-section section-bg-alt" id="benefits">
+        <div class="ui-shape ui-shape-s2"></div>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+				<div class="col-md-6 col-sm-8">
+					<div class="section-head-s7">
+						<h2 class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1">Air Cases</h2>
+					</div>
+				</div>
+			</div>
+            <div class="prblmsltn-list">
+                <div class="prblmsltn-item">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 animate-left delay-5ms">
+                            <div class="prblm-item">
+                                <h2 class="prblm-title">Fiat Onramps for Crypto Projects</h2>
+                               <p>Most of the world’s money is issued by the central banks of nation states. And then there is cryptocurrency– decentralized, non-state money that can do valuable and important things that fiat money can’t. The Air Protocol makes it easy to build unstoppable </br>fiat <em class="fas fa-arrows-alt-h"></em> crypto exchanges.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 animate-right delay-7ms">
+                            <div class="sltn-item">
+                                <h2 class="sltn-title">Wealth Preservation</h2>
+                               <p>Most of the world’s money loses purchasing power over time due to central banks issuing more and more of it. In countries with hyperinflation, local money is broken and banks are forced to apply rigged exchange rates. The Air Protocol makes it easy to build unstoppable P2P exchanges that bridge local money to better stores of value.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prblmsltn-item">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 animate-left delay-5ms">
+                            <div class="prblm-item">
+                                <h2 class="prblm-title">Global Ecommerce</h2>
+                               <p>Most people in developing countries can only “windowshop” online because they either lack access to electronic payments or the ones they do have are not accepted by merchants. The Air Protocol makes it easy for merchants to accept payments in any local money that are settled as cryptocurrency or AP-compatible stablecoin.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 animate-right delay-7ms">
+                            <div class="sltn-item">
+                                <h2 class="sltn-title">Global Remittance</h2>
+                                <p>Billions of people in the developing world rely on remittances sent by family who have found work in the developed world. Remittance is often earned in a strong currency but paid out in a weak currency, incurring hefty fees and bad forex along the way. The Air Protocol makes it easy for low-cost remittance to be received at free market rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Start Section -->
+    
+	<div class="section section-pad document-section section-bg-zinnia" id="documents">
+	    <div class="container">
+	       <div class="row justify-content-center text-center">
+				<div class="col-md-6 col-sm-8">
+					<div class="section-head-s7">
+						<h2 class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1">Help us build</h2>
+					</div>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row justify-content-center text-center">
+			<div class="col-md-4 col-sm-12 " style="margin-top:20px;">
+                 	<h2 class="prblm-title animated" data-animate="fadeInUp" data-delay=".1">Blockchain integrations</h2>
+                    <p style="text-align:justify;" class="animated"  data-animate="fadeInUp" data-delay=".1">Every cryptocurrency project needs fiat on and offramps so that legacy money (centralized, easily debased, easy to censor and confiscate) can be exchanged for blockchain-based assets that are increasingly essential to freedom and the protection of basic human rights. If you are a developer contributing to a public blockchain project, please get in touch to help build an Air Protocol implementation.</p>
+              </div>
+              <div class="col-md-4 col-sm-12"  style="margin-top:20px;">
+                 	<h2 class="prblm-title animated" data-animate="fadeInUp" data-delay=".1">Arbitration Dapps</h2>
+                    <p style="text-align:justify;" class="animated"  data-animate="fadeInUp" data-delay=".1">Are you a lawyer, financial consultant, or judge? Do you run a call center? You and your organization can offer your arbitration services to resolve disputes that arise from Air Protocol transactions.</p>
+              </div>
+              <div class="col-md-4 col-sm-12"  style="margin-top:20px;">
+                 	<h2 class="prblm-title animated" data-animate="fadeInUp" data-delay=".1" >Local exchange Dapps</h2>
+                    <p style="text-align:justify;" class="animated"  data-animate="fadeInUp" data-delay=".1">Are you a P2P trader on Localbitcions or an advanced peer on Airtm? Do you have a community that needs to receive remittances or payments from abroad? Do you organize cryptocurrency meetups or run a finance club? With the Air Protocol’s free open source Local Exchange software, you can launch your own P2P exchange and help people exchange local money for cryptocurrency and vice versa.</p>
+              </div>
+              <a href="#contact" class="nav-link btn btn-outline menu-link animated"  data-animate="fadeInUp" data-delay=".1" style="margin-top:20px;">Join us</a></div>
+	    </div><!-- .container -->
+	</div>
+	<!-- End Section -->
+	
+
+	
+
+
+    <!-- Start Section -->
+	<div class="section section-pad section-bg" id="team">
+	    <div class="ui-shape ui-shape-s5"></div>
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-xl-6 col-lg-8">
+					<div class="section-head-s7">
+						<h2 class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1">The AirProtocol Team</h2>
+						<p class="animated" data-animate="fadeInUp" data-delay=".2">The AirTeam is working with a community of industry experts to bring the AirProtocol vision to life.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center text-center">
+				<div class="col-sm-6 col-lg-3">
+					<div class="team-circle animated" data-animate="fadeInUp" data-delay=".3">
+						<div class="team-photo">
+							<img src="images/tim.jpg" alt="tim" />
+							<a href="javascript:;" class="expand-trigger"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Tim Parsa</h5>
+							<span class="team-title">Airtist</span>
+							<ul class="team-social">
+								<li><a href="https://www.linkedin.com/in/timparsa/"><em class="fab fa-linkedin-in"></em></a></li>
+								<li><a href="https://twitter.com/timparsa"><em class="fab fa-twitter"></em></a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- .col  -->
+
+				<div class="col-sm-6 col-lg-3">
+					<div class="team-circle animated" data-animate="fadeInUp" data-delay=".4">
+						<div class="team-photo">
+							<img src="images/jorge.jpg" alt="jorge">
+							<a href="javascript:;" class="expand-trigger"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Jorge Ruiz</h5>
+							<span class="team-title">Airchitect</span>
+							<ul class="team-social">
+								<li><a href="https://www.linkedin.com/in/jorgere/"><em class="fab fa-linkedin-in"></em></a></li>
+								<li><a href="https://twitter.com/Jorge_RE_"><em class="fab fa-twitter"></em></a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- .col  -->
+
+				<div class="col-sm-6 col-lg-3">
+					<div class="team-circle animated" data-animate="fadeInUp" data-delay=".7">
+						<div class="team-photo">
+							<img src="images/cris.jpg" alt="cris">
+							<a href="javascript:;" class="expand-trigger"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Cristina Manrique</h5>
+							<span class="team-title">Front-end Lead</span>
+							<ul class="team-social">
+								<li><a href="https://www.linkedin.com/in/cristinamanrique/"><em class="fab fa-linkedin-in"></em></a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- .col  -->
+				
+				<div class="col-sm-6 col-lg-3">
+					<div class="team-circle animated" data-animate="fadeInUp" data-delay=".6">
+						<div class="team-photo">
+							<img src="images/ceci.jpg" alt="ceci">
+							<a href="javascript:;" class="expand-trigger"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Cecilia Silva</h5>
+							<span class="team-title">Operations Lead</span>
+							<ul class="team-social">
+								<li><a href="https://www.linkedin.com/in/cecilia-silva-27766452/"><em class="fab fa-linkedin-in"></em></a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- .col  -->
+
+				<div class="col-sm-6 col-lg-3">
+					<div class="team-circle animated" data-animate="fadeInUp" data-delay=".5">
+						<div class="team-photo">
+							<img src="images/edu.jpg" alt="edu">
+							<a href="javascript:;" class="expand-trigger"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">Eduardo Cruz</h5>
+							<span class="team-title">Community Lead</span>
+							<ul class="team-social">
+								<li><a href="https://www.linkedin.com/in/eduardo-cruz-8a064098/"><em class="fab fa-linkedin-in"></em></a></li>
+								<li><a href="https://twitter.com/eduardodomc"><em class="fab fa-twitter"></em></a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- .col  -->
+
+				<div class="col-sm-6 col-lg-3">
+					<div class="team-circle animated" data-animate="fadeInUp" data-delay=".8">
+						<div class="team-photo">
+							<img src="images/you.jpg" alt="you">
+							<a href="#contact" class="nav-link menu-link expand-trigger"></a>
+						</div>
+						<div class="team-info">
+							<h5 class="team-name">You</h5>
+							<span class="team-title">Airtrepreneur</span>
+							<ul class="team-social">
+							</ul>
+						</div>
+					</div>
+				</div><!-- .col  -->
+			</div><!-- .row  -->
+			
+        </div>
+    </div>
+
+	<!-- Start Section -->
+	<div class="section section-pad-md section-bg-alt" id="contact">
+	    <div class="ui-shape ui-shape-s7"></div>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col">
+					<div class="section-head-s7">
+						<h2 class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1">Join the AirTeam</h2>
+						<p class="animated" data-animate="fadeInUp" data-delay=".2">Help us build the next generation of financial infrastucture for the world. Send us a message letting us know what your interests are.</p>
+					</div>
+				</div><!-- .col -->
+			</div><!-- .row -->
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<form id="contact-form" class="form-message text-center show-error-hint" action="form/contact.php" method="post">
+						<div class="form-results"></div>
+						<div class="input-field animated" data-animate="fadeInUp" data-delay=".6">
+							<input name="contact-name" type="text" class="input-line required">
+							<label class="input-title">Your Name</label>
+						</div>
+						<div class="input-field animated" data-animate="fadeInUp" data-delay=".7">
+							<input name="contact-email" type="email" class="input-line required email">
+							<label class="input-title">Your Email</label>
+						</div>
+						<div class="input-field animated" data-animate="fadeInUp" data-delay=".8">
+							<textarea name="contact-message" class="txtarea input-line required"></textarea>
+							<label class="input-title">Your Message</label>
+						</div>
+						<input type="text" class="d-none" name="form-anti-honeypot" value="">
+						<div class="input-field animated" data-animate="fadeInUp" data-delay=".9">
+							<button type="submit" class="btn">Submit</button>
+						</div>
+					</form>
+				</div><!-- .col -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div>
+	<!-- End Section -->
+	
+	<!-- Start Section -->
+	<div class="section section-pad section-bg" id="faq">
+	    <div class="ui-shape ui-shape-s5"></div>
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-xs-12" style="width:100%;">
+					<div class="section-head-s7">
+						<h2 class="section-title-s7 animated" data-animate="fadeInUp" data-delay=".1">FAQ</h2>
+						<p>Frequently Asked Questions</p>
+						<button class="collapsible">What is the Air Protocol?</button>
+						<div class="content" style="padding:20px;">
+  								<p>The Air Protocol, developed by the APF (AirProtocol Foundation), is a decentralized, open source protocol that enables censorship-resistant and trust-minimized fiat to crypto exchange (and vice versa). The Air Protocol’s reference implementation was funded by Airtm, Inc, a blockchain and bank connected e-wallet that provides reliable financial services to people and businesses in emerging markets.</p>
+						</div>
+						<button class="collapsible">What is the Air Protocol Foundation?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>The AirProtocol Foundation is a Delaware not-for-profit that developed the reference implementation for the Air Protocol, as well as open-source front-end software for P2P exchanges and arbitration services.</p>
+						</div>
+						<button class="collapsible">How is the Air Protocol related to Airtm?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>The AirProtocol was conceived within AirTM. AirTM provided initial funding and manpower besides a proven track record of peer-to-peer exchange expertise and dealing with censorship. AirTM will also be providing liquidity and initial markets and dispute resolution for the Air Protocol.</p>
+						</div>
+						<button class="collapsible">What is APX?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>The AirProtocol was conceived within AirTM. AirTM provided initial funding and manpower besides a proven track record of peer-to-peer exchange expertise and dealing with censorship. AirTM will also be providing liquidity and initial markets and dispute resolution for the Air Protocol.</p>
+						</div>
+						<button class="collapsible">Does the Air Protocol have a native token?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>No. At this time there is no plan to have a native token. As the Air Protocol evolves, a token could be added to incentivize participants in the Air Protocol ecosystem.</p>
+						</div>
+						<button class="collapsible">What are Air Juries?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>Air Jurories are groups of people that can be requested to intervene and mediate should a dispute arise. These are normal people that provide their time to work and solve disputes when they occur. They do this work in exchange for Air.</p>
+						</div>
+						<button class="collapsible">How can I get involved?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>As an Investor contact us.</p>
+ 								 <p>As a Blockchain Developer you can join our Github page and our Wiki to get updates on our code & prototypes.</p>
+ 								 <p>As a user you can join the AirProtocol Community and apply to become a AirProtocol Ambassador in your country.</p>
+						</div>
+						<button class="collapsible">Will there be a AirDrop of Air?</button>
+						<div class="content" style="padding:20px;">
+ 								 <p>Yes. A total of 20% of the token allocation will be used to distribute to end users and network participants. Signup here (email) to be informed.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+        </div>
+    </div>
+
+	
+	
+	<!-- Start Section -->
+	<div class="section footer-section section-pad-md no-pb">
+        <div class="ui-shape ui-shape-light ui-shape-footer"></div>
+	    <div class="container">
+	        <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-sm-6 res-m-bttm">
+                        <a class="footer-brand" href="./">
+                            <img class="logo logo-light" alt="logo" src="images/logo-full-white.png" srcset="images/logo-full-white2x.png 2x">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 text-sm-right">
+                        <span class="copyright-text"> &copy; 2018 AirProtocol Foundation.</span>
+                    </div>
+                </div>
+	        </div>
+	    </div><!-- .container -->
+	</div>
+	<!-- End Section -->
+
+
+	<!-- Preloader !remove please if you do not want -->
+	<div id="preloader">
+		<div class="loader-section loader-top"></div>
+   		<div class="loader-section loader-bottom"></div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- JavaScript (include all script here) -->
+	<script src="assets/js/jquery.bundle.js?ver=142"></script>
+	<script src="assets/js/script.js?ver=142"></script>
+	
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
+
+
 </html>
