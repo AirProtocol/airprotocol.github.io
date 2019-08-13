@@ -80,7 +80,7 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f2f9ff;
 }
 
 .prblm-item img{
@@ -320,7 +320,7 @@ hr:last-child, .hr:last-child { margin-bottom: 0; }
 .section-pad { padding-top: 120px; padding-bottom: 120px; }
 .section-pad-xs { padding-top: 20px; padding-bottom: 20px; }
 .section-pad-sm { padding-top: 60px; padding-bottom: 60px; }
-.section-pad-md { padding-top: 90px; padding-bottom: 90px; }
+.section-pad-md { padding-top: 30px; padding-bottom: 90px; }
 .section-pad-lg { padding-top: 180px; padding-bottom: 180px; }
 .section-pad.nopd { padding-top: 0; padding-bottom: 0; }
 .section-pad.nopb { padding-bottom: 0; }
@@ -468,8 +468,8 @@ hr:last-child, .hr:last-child { margin-bottom: 0; }
 
 @media screen and (min-width: 1600px) { .section-pad { padding-top: 180px; padding-bottom: 180px; }
   .section-pad-xs { padding-top: 20px; padding-bottom: 20px; }
-  .section-pad-sm { padding-top: 90px; padding-bottom: 90px; }
-  .section-pad-md { padding-top: 120px; padding-bottom: 120px; }
+  .section-pad-sm { padding-top: 60px; padding-bottom: 90px; }
+  .section-pad-md { padding-top: 30px; padding-bottom: 120px; }
   .section-pad-lg { padding-top: 240px; padding-bottom: 240px; }
   .section-pad.nopd { padding-top: 0; padding-bottom: 0; } }
 @media only screen and (min-width: 1200px) { .pad-r { padding-right: 60px; }
