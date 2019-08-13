@@ -831,7 +831,7 @@ a:hover, a:focus, a:active { color: #de6288; }
 .io-zinnia .widget-title { color: #fff; }
 .io-zinnia .timeline-title { color: #1996FB; }
 .io-zinnia .timeline-done .timeline-title { color: #223b55; }
-.io-zinnia .header-txt p { color: #ffcece; }
+.io-zinnia .header-txt p { color: #ddf0ff; }
 .io-zinnia .btn { color: #fff; background-image: -webkit-linear-gradient(to right, #1996FB 0%, #58b4ff 100%); background-image: linear-gradient(to right, #1996FB 0%, #58b4ff 100%); }
 .io-zinnia .btn:before { background-image: -webkit-linear-gradient(to right, #58b4ff 0%, #1996FB 100%); background-image: linear-gradient(to right, #58b4ff 0%, #1996FB 100%); }
 .io-zinnia .btn-outline { background: transparent; border-color: rgba(255, 255, 255, 0.4); }
@@ -938,12 +938,12 @@ a:hover, a:focus, a:active { color: #de6288; }
 .play-btn-s3 { background: #fff; }
 
 .prblm-item { background: #fff; }
-.prblm-title { color: rgba(90, 90, 90, 0.2) !important; }
+.prblm-title { color: rgba(90, 90, 90, 0.4) !important; }
 .prblm-subtitle { color: #58b4ff !important; }
 .prblm-points li:before { background: #58b4ff; }
 
 .sltn-item { background: #58b4ff; }
-.sltn-title { color: rgba(255, 249, 250, 0.3) !important; }
+.sltn-title { color: #fff !important; }
 .sltn-subtitle { color: #fff !important; }
 .sltn-points li { color: #ffcece; }
 .sltn-points li:before { background: #fed895; }

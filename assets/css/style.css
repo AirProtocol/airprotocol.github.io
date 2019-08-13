@@ -73,7 +73,7 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
 }
 
 .collapsible:hover {
-  background-color: #007bff;
+  background-color: #1996FB;
 }
 
 .content {
@@ -81,6 +81,17 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+.prblm-item img{
+    width:10%;
+}
+
+.cases-box{
+    background-color:#fff;
+    border-radius:20px;
+    padding:30px;
+    margin:30px;
 }
 .io-azure .section-pro h1, .io-azure .section-pro h2, .io-azure .section-pro h3, .io-azure .section-pro h4, .io-azure .section-pro h5, .io-azure .section-pro h6, .io-azure .section-pro blockquote, .io-azure .section-pro-alt h1, .io-azure .section-pro-alt h2, .io-azure .section-pro-alt h3, .io-azure .section-pro-alt h4, .io-azure .section-pro-alt h5, .io-azure .section-pro-alt h6, .io-azure .section-pro-alt blockquote { color: #1641b5; }
 
@@ -3448,7 +3459,7 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 .prblm-points li:before { background: #fe4350; }
 
 .sltn-item { background: #fe4350; z-index: 2; margin-left: 20px; margin-top: -35px; }
-.sltn-title { color: rgba(255, 249, 250, 0.3) !important; }
+.sltn-title { color: #fff !important; }
 .sltn-subtitle { color: #fff !important; }
 .sltn-points li { color: #ffcece; }
 .sltn-points li:before { background: #fed895; }
