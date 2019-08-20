@@ -71,24 +71,76 @@
 			<div class="container">
 				<div class="banner-content">
 					<div class="row align-items-center text-center justify-content-center">
-						<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="col-sm-12 col-md-12 col-lg-12" style="margin-left:5%;">
 							<div class="header-txt tab-center mobile-center">
 								<div class="col-lg-4 col-md-12" style="float:left; margin-top:5%;">
-								<h2 class="animated" data-animate="fadeInUp" data-delay="1.25">Introducing the Air Protocol Network</h2>
+								<h2 class="animated" data-animate="fadeInUp" data-delay="0.25">Introducing the Air Protocol Network</h2>
 								<div class="gaps size-1x d-none d-md-block"></div>
-								<p class="lead animated" data-animate="fadeInUp" data-delay="1.35">Unstoppable </br>peer-to-peer <br class="d-none d-sm-block"></br> Fiat <em class="fas fa-arrows-alt-h"></em> Crypto exchange</p>
+								<p class="lead animated" data-animate="fadeInUp" data-delay="0.35">Unstoppable </br>peer-to-peer <br class="d-none d-sm-block"></p>
 															</div>
 								<div class="col-lg-6 col-md-12" style="float:left;">
-								<img src="images/fiat-crypto2.png" class="exchange-icon lead animated" data-animate="fadeInUp" data-delay="1.35" />
+								<!--<img src="images/fiat-crypto2.png" class="exchange-icon lead animated" data-animate="fadeInUp" data-delay="1.35" />-->
+
+
+								<div class="slideshow-container">
+
+<div class="mySlides">
+  <img src="images/fiat-crypto2.png" style="width:100%">
+  <div class="text-slide animated" data-animate="fadeInUp" data-delay="0.35">Fiat <em class="fas fa-arrows-alt-h"></em> Crypto exchange</div>
+</div>
+
+<div class="mySlides">
+  <img src="images/assets-crypto.png" style="width:100%">
+  <div class="text-slide animated" data-animate="fadeInUp" data-delay="0.35">Assets <em class="fas fa-arrows-alt-h"></em> Crypto exchange</div>
+</div>
+
+<!--<div class="mySlides">
+  <img src="images/fiat-crypto3.png" style="width:100%">
+  <div class="text-slide animated" data-animate="fadeInUp" data-delay="0.35">Fiat <em class="fas fa-arrows-alt-h"></em> Crypto exchange 3</div>
+</div>-->
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <!--<span class="dot"></span>-->
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+
 								</div>
 								<div class="gaps size-1x d-none d-md-block"></div>
-								<ul class="btns animated" data-animate="fadeInUp" data-delay="1.45">
+								<ul class="btns animated" data-animate="fadeInUp" data-delay="0.45">
 									<!--<li><a href="#documents" class="nav-link menu-link btn btn-icon-s3">WHITE PAPER <i class="fas fa-angle-double-right"></i></a></li>-->
 									<li><a href="#contact" class="nav-link menu-link btn btn-icon-s3">BUILD WITH US <i class="fas fa-angle-double-right"></i></a></li>
 								</ul>
 
-								
-								
+
+
 							</div>
 						</div><!-- .col  -->
 					</div><!-- .row  -->
