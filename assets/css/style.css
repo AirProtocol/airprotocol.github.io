@@ -126,7 +126,11 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
 @media only screen and (max-width: 992px) {
   .text-slide {
     margin-left:0%;
-    margin-bottom:92%;
+    margin-bottom:90.5%;
+
+  }
+  .slideshow-container{
+    margin-top:15px;
   }
 }
 
