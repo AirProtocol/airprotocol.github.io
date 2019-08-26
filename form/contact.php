@@ -1,99 +1,59 @@
 <?php
 header('Content-type: application/json');
-require_once('php-mailer/PHPMailerAutoload.php'); // Include PHPMailer
-
-$mail = new PHPMailer();
-$emailTO = $emailBCC =  $emailCC = array(); $formEmail = '';
-
-### Enter Your Sitename 
-$sitename = 'AirProtocol';
-
-### Enter your email addresses: @required
-$emailTO[] = array( 'email' => 'edu@airprotocol.org', 'name' => 'Edu Cruz' );
-
-### Enable bellow parameters & update your BCC email if require.
-//$emailBCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
-
-### Enable bellow parameters & update your CC email if require.
-$emailCC[] = array( 'email' => 'info@yfdev.com', 'name' => 'Yellowfin Development' );
-
-### Enter Email Subject
-$subject = "Contact Us " . ' - ' . $sitename; 
-
-### If your did not recive email after submit form please enable below line and must change to your correct domain name. eg. noreply@example.com
-$formEmail = 'noreply@airprotocol.org';
 
 ### Success Messages
 $msg_success = "We have <strong>successfully</strong> received your message. We'll get back to you soon.";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST') {
-	if (isset($_POST["contact-email"]) && $_POST["contact-email"] != '' && isset($_POST["contact-name"]) && $_POST["contact-name"] != '') {
-		### Form Fields
-		$cf_email = $_POST["contact-email"];
-		$cf_name = $_POST["contact-name"];
-		$cf_message = isset($_POST["contact-message"]) ? $_POST["contact-message"] : '';
+    if (isset($_POST["contact-email"]) && $_POST["contact-email"] != '' && isset($_POST["contact-name"]) && $_POST["contact-name"] != '') {
+        ### Form Fields
+        $cf_email = $_POST["contact-email"];
+        $cf_name = $_POST["contact-name"];
+        $cf_message = isset($_POST["contact-message"]) ? $_POST["contact-message"] : '';
 
-		$honeypot 	= isset($_POST["form-anti-honeypot"]) ? $_POST["form-anti-honeypot"] : 'bot';
-		$bodymsg = '';
-		
-		if ($honeypot == '' && !(empty($emailTO))) {
-			### If you want use SMTP 
-			 $mail->isSMTP();
-			 $mail->SMTPDebug = 1;
-			 $mail->Host = 'smtpout.secureserver.net';
-			 $mail->Port = 587;
-			 $mail->SMTPAuth = true;
-			 $mail->Username = 'mailbot@airprotocol.org';
-			 $mail->Password = '4nNj&mhr';
+        $honeypot   = isset($_POST["form-anti-honeypot"]) ? $_POST["form-anti-honeypot"] : 'bot';
+        
+        if ($honeypot == '') {
 
-			### Regular email configure
-			$mail->IsHTML(true);
-			$mail->CharSet = 'UTF-8';
+            $data = array (
+                'email' => $cf_email,
+                'name' => $cf_name,
+                'message' => $cf_message
+            );
 
-			$mail->From = ($formEmail !='') ? $formEmail : $cf_email;
-			$mail->FromName = $cf_name . ' - ' . $sitename;
-			$mail->AddReplyTo($cf_email, $cf_name);
-			$mail->Subject = $subject;
-			
-			foreach( $emailTO as $to ) {
-				$mail->AddAddress( $to['email'] , $to['name'] );
-			}
-			
-			### if CC found
-			if (!empty($emailCC)) {
-				foreach( $emailCC as $cc ) {
-					$mail->AddCC( $cc['email'] , $cc['name'] );
-				}
-			}
-			
-			### if BCC found
-			if (!empty($emailBCC)) {
-				foreach( $emailBCC as $bcc ) {
-					$mail->AddBCC( $bcc['email'] , $bcc['name'] );
-				}				
-			}
+            $postData = json_encode($data);
+            
+            $ch = curl_init('https://mail.catalystmx.com/mail');
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLINFO_HEADER_OUT, true);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+            
+            // Set HTTP Header for POST request 
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                'Content-Type: application/json',
+                'Content-Length: ' . strlen($postData))
+            );
 
-			### Include Form Fields into Body Message
-			$bodymsg .= isset($cf_name) ? "Contact Name: $cf_name<br><br>" : '';
-			$bodymsg .= isset($cf_email) ? "Contact Email: $cf_email<br><br>" : '';
-			$bodymsg .= isset($cf_message) ? "Message: $cf_message<br><br>" : '';
-			$bodymsg .= $_SERVER['HTTP_REFERER'] ? '<br>---<br><br>This email was sent from [ICO]: ' . $_SERVER['HTTP_REFERER'] : '';
-			
-			// Mailing
-			$mail->MsgHTML( $bodymsg );
-			$is_emailed = $mail->Send();
+            $server_output = curl_exec($ch);
+            curl_close ($ch);
 
-			if( $is_emailed === true ) {
-				$response = array ('result' => "success", 'message' => $msg_success);
-			} else {
-				$response = array ('result' => "error", 'message' => $mail->ErrorInfo);
-			}
-			echo json_encode($response);
-			
-		} else {
-			echo json_encode(array ('result' => "error", 'message' => "Bot <strong>Detected</strong>.! Clean yourself Botster.!"));
-		}
-	} else {
-		echo json_encode(array ('result' => "error", 'message' => "Please <strong>Fill up</strong> all required fields and try again."));
-	}
+            $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+            if( $code === 200 ) {
+                $response = array ('result' => "success", 'message' => $msg_success);
+            } else {
+                $response = array ('result' => "error", 'message' => $mail->ErrorInfo);
+            }
+
+            echo json_encode($response);
+            
+        } else {
+            echo json_encode(array ('result' => "error", 'message' => "Bot <strong>Detected</strong>.! Clean yourself Botster.!"));
+        }
+    } else {
+        echo json_encode(array ('result' => "error", 'message' => "Please <strong>Fill up</strong> all required fields and try again."));
+    }
 }
+
+?>
