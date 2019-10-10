@@ -55,6 +55,21 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
 .theme-light h1.color-primary, .theme-light h2.color-primary, .theme-light h3.color-primary, .theme-light h4.color-primary, .theme-light h5.color-primary, .theme-light h6.color-primary, .theme-light .h1.color-primary, .theme-light .h2.color-primary, .theme-light .h3.color-primary, .theme-light .h4.color-primary, .theme-light .h5.color-primary, .theme-light .h6.color-primary, .io-dark-light .section-light h1.color-primary, .io-dark-light .section-light h2.color-primary, .io-dark-light .section-light h3.color-primary, .io-dark-light .section-light h4.color-primary, .io-dark-light .section-light h5.color-primary, .io-dark-light .section-light h6.color-primary, .io-dark-light .section-light .h1.color-primary, .io-dark-light .section-light .h2.color-primary, .io-dark-light .section-light .h3.color-primary, .io-dark-light .section-light .h4.color-primary, .io-dark-light .section-light .h5.color-primary, .io-dark-light .section-light .h6.color-primary, .io-dark-light .section-light-alt h1.color-primary, .io-dark-light .section-light-alt h2.color-primary, .io-dark-light .section-light-alt h3.color-primary, .io-dark-light .section-light-alt h4.color-primary, .io-dark-light .section-light-alt h5.color-primary, .io-dark-light .section-light-alt h6.color-primary, .io-dark-light .section-light-alt .h1.color-primary, .io-dark-light .section-light-alt .h2.color-primary, .io-dark-light .section-light-alt .h3.color-primary, .io-dark-light .section-light-alt .h4.color-primary, .io-dark-light .section-light-alt .h5.color-primary, .io-dark-light .section-light-alt .h6.color-primary { color: #46bdf4; }
 .theme-light h1 + .image:not([class*="mt-"]), .theme-light h2 + .image:not([class*="mt-"]), .theme-light h3 + .image:not([class*="mt-"]), .theme-light h4 + .image:not([class*="mt-"]), .theme-light h5 + .image:not([class*="mt-"]), .theme-light h6 + .image:not([class*="mt-"]), .theme-light .h1 + .image:not([class*="mt-"]), .theme-light .h2 + .image:not([class*="mt-"]), .theme-light .h3 + .image:not([class*="mt-"]), .theme-light .h4 + .image:not([class*="mt-"]), .theme-light .h5 + .image:not([class*="mt-"]), .theme-light .h6 + .image:not([class*="mt-"]), .io-dark-light .section-light h1 + .image:not([class*="mt-"]), .io-dark-light .section-light h2 + .image:not([class*="mt-"]), .io-dark-light .section-light h3 + .image:not([class*="mt-"]), .io-dark-light .section-light h4 + .image:not([class*="mt-"]), .io-dark-light .section-light h5 + .image:not([class*="mt-"]), .io-dark-light .section-light h6 + .image:not([class*="mt-"]), .io-dark-light .section-light .h1 + .image:not([class*="mt-"]), .io-dark-light .section-light .h2 + .image:not([class*="mt-"]), .io-dark-light .section-light .h3 + .image:not([class*="mt-"]), .io-dark-light .section-light .h4 + .image:not([class*="mt-"]), .io-dark-light .section-light .h5 + .image:not([class*="mt-"]), .io-dark-light .section-light .h6 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt h1 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt h2 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt h3 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt h4 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt h5 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt h6 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt .h1 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt .h2 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt .h3 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt .h4 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt .h5 + .image:not([class*="mt-"]), .io-dark-light .section-light-alt .h6 + .image:not([class*="mt-"]) { margin-top: 20px; }
 
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+		margin-left: 10%;
+}
+
 .exchange-icon{
     width:100%;
 }
