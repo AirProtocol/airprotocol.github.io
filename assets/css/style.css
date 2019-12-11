@@ -75,7 +75,7 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
 }
 
 .collapsible {
-  background-color: #58b4ff;
+  background-color: #ec664f;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -88,14 +88,14 @@ h1 + .image:not([class*="mt-"]), h2 + .image:not([class*="mt-"]), h3 + .image:no
 }
 
 .collapsible:hover {
-  background-color: #1996FB;
+  background-color: #eb5954;
 }
 
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f2f9ff;
+  background-color: #fff5f6;
 }
 
 .prblm-item img{
@@ -1489,8 +1489,8 @@ select:focus { outline: none; border: none; }
 .form-message { /* @v1.1.0 s */ /* @v1.1.0 e */ }
 .form-message .input-field { margin-bottom: 20px; position: relative; }
 .form-message .input-field .btn { margin-top: 10px; }
-.form-message .input-field label.input-title { position: absolute; width: 100%; top: 18px; left: 0; color: #8284a5; z-index: 1; transition: all .5s ease; }
-.form-message .input-field .input-line { position: relative; line-height: 46px; z-index: 2; background: transparent; border: none; width: 100%; text-align: center; color: #fff; border-bottom: 1px solid #46bdf4; margin-top: 8px; outline: none; }
+.form-message .input-field label.input-title { position: absolute; width: 100%; top: 18px; left: 0; color: #484848; z-index: 1; transition: all .5s ease; }
+.form-message .input-field .input-line { position: relative; line-height: 46px; z-index: 2; background: transparent; border: none; width: 100%; text-align: center; color: #fff; border-bottom: 1px solid #ed664f; margin-top: 8px; outline: none; }
 .form-message .input-field .input-line.error { border-bottom-color: #d2636d; }
 .form-message .input-field .txtarea { height: 105px; resize: none; outline: none; line-height: 21px; padding-top: 14px; }
 .form-message .input-field .txtarea + .input-title { top: 75px; }
@@ -3344,8 +3344,9 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 .io-zinnia .section-bg h1, .io-zinnia .section-bg h2, .io-zinnia .section-bg h3, .io-zinnia .section-bg h4, .io-zinnia .section-bg h5, .io-zinnia .section-bg h6, .io-zinnia .section-bg-alt h1, .io-zinnia .section-bg-alt h2, .io-zinnia .section-bg-alt h3, .io-zinnia .section-bg-alt h4, .io-zinnia .section-bg-alt h5, .io-zinnia .section-bg-alt h6 { color: #4c5a77; }
 .io-zinnia .section-bg p, .io-zinnia .section-bg-alt p { color: #4c5a77; }
 .io-zinnia .section-bg p.lead, .io-zinnia .section-bg-alt p.lead { color: #223b55; }
-.io-zinnia .section-bg .section-title-s7, .io-zinnia .section-bg .section-title-md, .io-zinnia .section-bg-alt .section-title-s7, .io-zinnia .section-bg-alt .section-title-md { color: #fe4350; }
-.io-zinnia .section-bg-zinnia, .io-zinnia .section-bg-gradient { background: #fe4350; color: #fff; }
+.io-zinnia .section-bg .section-title-s7, .io-zinnia .section-bg .section-title-md, .io-zinnia .section-bg-alt .section-title-s7, .io-zinnia .section-bg-alt .section-title-md { color: #cc5741; }
+/*!.io-zinnia .section-bg-zinnia, .io-zinnia .section-bg-gradient { background: #fe4350; color: #fff; }*/
+.io-zinnia .section-bg-zinnia, .io-zinnia .section-bg-gradient { background: #f75e4a; color: #fff; }
 .io-zinnia .section-bg-zinnia h1, .io-zinnia .section-bg-zinnia h2, .io-zinnia .section-bg-zinnia h3, .io-zinnia .section-bg-zinnia h4, .io-zinnia .section-bg-zinnia h5, .io-zinnia .section-bg-zinnia h6, .io-zinnia .section-bg-zinnia p, .io-zinnia .section-bg-zinnia p.lead, .io-zinnia .section-bg-zinnia .section-head-s7 p, .io-zinnia .section-bg-zinnia .section-title-s7, .io-zinnia .section-bg-zinnia .section-title-md, .io-zinnia .section-bg-gradient h1, .io-zinnia .section-bg-gradient h2, .io-zinnia .section-bg-gradient h3, .io-zinnia .section-bg-gradient h4, .io-zinnia .section-bg-gradient h5, .io-zinnia .section-bg-gradient h6, .io-zinnia .section-bg-gradient p, .io-zinnia .section-bg-gradient p.lead, .io-zinnia .section-bg-gradient .section-head-s7 p, .io-zinnia .section-bg-gradient .section-title-s7, .io-zinnia .section-bg-gradient .section-title-md { color: #fff; }
 .io-zinnia .section-bg-gradient { background-image: linear-gradient(135deg, #ff6c3f 0%, #fe4350 100%); }
 .io-zinnia .footer-section { overflow: hidden; background-image: linear-gradient(45deg, #ff6c3f 0%, #fe4350 100%); }
@@ -3375,7 +3376,7 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 .io-zinnia .site-header .navbar-nav > li > a:hover, .io-zinnia .site-header .navbar-nav > li > a.active { color: #223b55; }
 .io-zinnia .site-header .navbar-nav > li.open > a { color: #223b55; }
 .io-zinnia .site-header.has-fixed .navbar-nav > li > a { text-transform: capitalize; color: #223b55; }
-.io-zinnia .site-header.has-fixed .navbar-nav > li > a:hover, .io-zinnia .site-header.has-fixed .navbar-nav > li > a.active { color: #fe4350; }
+.io-zinnia .site-header.has-fixed .navbar-nav > li > a:hover, .io-zinnia .site-header.has-fixed .navbar-nav > li > a.active { color: #cc5741; }
 .io-zinnia .site-header.has-fixed .navbar-nav > li.open > a { color: #fe4350; }
 .io-zinnia .site-header.has-fixed .navbar.is-transparent .navbar-brand .logo-dark { display: block; }
 .io-zinnia .site-header.has-fixed .navbar.is-transparent .navbar-brand .logo-light { display: none; }
@@ -3432,8 +3433,8 @@ label.error { display: none !important; font-size: 13px; margin-top: 5px; color:
 .io-zinnia .team-circle .team-photo img { transition: all .6s; }
 .io-zinnia .team-circle .team-photo:hover img { transform: scale(0.85); }
 .io-zinnia .team-circle .team-photo:before { opacity: 1; transform: translateX(-50%) scale(1); background: linear-gradient(180deg, #fe4350 0%, #ff6c3f 100%); }
-.io-zinnia .team-circle .team-title { color: #4c5a77; }
-.io-zinnia .team-circle .team-name { color: #fe4350; }
+.io-zinnia .team-circle .team-title { color: #484848; }
+.io-zinnia .team-circle .team-name { color: #cc5741; }
 .io-zinnia .team-circle .team-social li a { color: #4c5a77; }
 .io-zinnia .team-circle .team-social li a:hover { color: #fe4350; }
 .io-zinnia .bg-team-exp.mfp-bg, .io-zinnia .skill-bar-percent { background: linear-gradient(-45deg, #fe4350 0%, #ff6c3f 100%); }
